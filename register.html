@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+        <h2 class="display-5">Registration Form</h2>
+    </div>
+    <div class="container">
+        <form id="registration-form" action="/submit" method="POST" target="_self">
+            <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" class="form-control" id="fname" name="fname" placeholder="Enter Your First Name...."/>
+            </div>
+            <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email...."/>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number...."/>
+            </div> 
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter Your DOB..."/>
+            </div>
+            <div class="form-group">
+            <label>Gender</label> <br>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input gender-input    " id="gender-input-1" name="gender" value="male"/> 
+                <label for="gender-input-1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input gender-input" id="gender-input-2" name="gender" value="female"/> 
+                    <label for="gender-input-2">Female</label>
+            </div>
+            <p id="gender-error" style=color:red></p> 
+            </div>
+            <div class="form-group ">
+            <label>Choose Expertise</label> <br>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input expertise-input" id="expertise-input-1" name="expertise" value="html"/> 
+                <label for="expertise-input-1">HTML</label>
+            </div>
+            <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input expertise-input" id="expertise-input-2" name="expertise" value="css"/> 
+                    <label for="expertise-input-2">CSS</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input expertise-input" id="expertise-input-3" name="expertise" value="js"/> 
+                <label for="expertise-input-3">JS</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input expertise-input" id="expertise-input-4" name="expertise" value="python"/> 
+                <label for="expertise-input-4">PYTHON</label>
+            </div>
+            <p id="expertise-error" style=color:red></p>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Enter Your Password..."/>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Confirm Your Password..."/>
+            </div>
+            <br><br>
+            <input type="submit" value="Register" class="btn btn-primary" id="submit"/>
+        </form>
+        <script src="./register.js"></script>
+
+    </div>
+</body>
+</html>
